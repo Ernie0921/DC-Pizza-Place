@@ -1,3 +1,3 @@
 # DC-Taco-Place
 This Landing page was created using Html
-![](./images/taco)
+![](./images/taco.gif)
