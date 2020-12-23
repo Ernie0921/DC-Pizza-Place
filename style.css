@@ -1,0 +1,47 @@
+
+body {
+  background-color: bisque;
+  
+}
+
+.logo {
+    text-align: center;
+}
+.logo h1 {
+    color: rgb(184, 69, 69);
+    outline:2px black;
+    font-size: 75px;  
+}
+.logo img {
+    border-radius: 50%;
+    opacity: 75%;
+   height: 200px;
+   
+}
+form{
+    text-align: center;
+    
+}
+#Order{
+    display: flex;
+}
+
+
+#Last-name {
+    margin-left: 10PX;
+}
+#Phone{
+    margin-left: 10PX;
+}
+#City {
+    margin-left: 10px;;
+}
+#State {
+    margin-left: 10px;
+}
+#Zipcode {
+    margin-left: 15px;
+}
+
+
+
