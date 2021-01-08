@@ -28,35 +28,43 @@
                 
                 <p>
                     Yes
-                    <input id="member" name="member" type="radio">
+                    <input id="yes" class="member" name="member" type="radio">
                 </p>
                 <p>
                     No
-                    <input id="member" name="member" type="radio">
+                    <input id="no" class="member" name="member" type="radio">
 
                 </p>
             <!----------Account Setup------->
                 <fieldset id="Creat-Account">
                     <legend><h2>Create and Account</h2></legend>
                     <label  id="First-name"for="first-name"><b>Name:</b></label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text"  name="first-name" id="first-name" pattern="[A-Za-z]+" required>
                     
                     <label id="Last-name" for="last-name"><b>Last Name:</b></label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]+" required>
 
                     <label id="Phone" for="phone"><b>Phone:</b></label>
-                    <input type="telephone" name="phone" id="phone">
+                    <input type="tel" name="phone" id="phone" pattern="^[-0-9]+$" required>
+
+                    <label id="Email" for="email"><b>Email:</b></label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label id="Password" for="password"><b>Password:</b></label>
+                    <input type="password"  pattern="[A-Za-z0-9]{4,12}" name="password" id="password" minlength="3" maxlength="12" required>
+
+
                 </fieldset>
 
                 <p class="Address">
                     <label id="Address" for="address">Street:</label>
-                    <input type="text" name="address" id="address">
+                    <input type="text" name="address" id="address" required>
                     
                     <label id="City" for="city">City:</label>
-                    <input type="text" name="city" id="city">
+                    <input type="text" name="city" pattern="^[A-Za-z]+" id="city" required>
 
                     <label id="State" for="state">State:</label>
-                    <select id="state">
+                    <select id="state" required>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -110,115 +118,19 @@
                         <option value="WY">Wyoming</option>
                     </select>	
                     <label id="Zipcode" for="Zipcode">ZipCode:</label>
-                    <input type="number" name="zipcode" id="zipcode">	             
+                    <input type="text" name="zipcode" id="zipcode"  pattern="[0-9]+" required>	             
                 </p>
             </div>
+            <div class="submit-button">
+                <button class="submit" type="submit">Create Account</button>
+            </div>
             
-        <!-----Food Order------->
-            <fieldset id="Order">
-                <legend id="order-legend"><b><i><h2>Place Order Here</h2></i></b></legend>
-                <!---taco count---->
-                               
-                <div class="taco-count">
-                    <h3>Taco Count</h3>
-                
-                    <label id="One-taco" for="one-taco">One Taco</label>
-                    <input type="checkbox" name="one-taco" id="one-taco">
-                    <label id="Three-taco" for="three-taco">Three Taco</label>
-                    <input type="checkbox" name="three-taco" id="three-taco">
-                </div>
-                <!------Protien------>
-                <div class="protein">
-                    <h3>Choose Protein</h3>                   
-                    </ol>
-                        <ul>
-                            <label id="" for="">Carne Asada</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Pollo Al Carbon</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Barbaquoa</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Tilapia</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Al Pastor</label>
-                            <input id=""type="checkbox">
-                       
-                        </ul>              
-                     </ol>   
-                </div>
-                <hr>
-                <!------tortilla shell-->
-                <div class="tortilla">
-                    <h3>Tortilla</h3>
-                
-                    <label id="Hard-shell" for="hard-shell">Hard Shell</label>
-                    <input type="radio" name="hard-shell" id="hard-shell">
-                    <label id="Soft-shell" for="soft-shell">Soft Shell</label>
-                    <input type="radio" name="soft-shell" id="soft-shell">
-                </div>
-                <hr>
-                <!-----Veggies------->
-                <div class="Toppings">
-                    <h3>Toppings</h3>                   
-                    </ol>
-                        <ul>
-                            <label id="" for="">Guacamole</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Sour cream</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Pico de Gallo</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Salsa Chipotle</label>
-                            <input id=""type="checkbox">
-                        </ul>
-                        <ul>
-                            <label id="" for="">Salsa Tomatillo (Green)</label>
-                            <input id=""type="checkbox">
-                       
-                        </ul>
-                        <ul>
-                            <label id="" for="">Fajita Veggies</label>
-                            <input id=""type="checkbox">
-                       
-                        </ul> 
-                        <ul>
-                            <label id="" for="">Shredded Cheese</label>
-                            <input id=""type="checkbox">
-                       
-                        </ul> 
-                        <ul>
-                            <label id="" for="">Roman Lettuce</label>
-                            <input id=""type="checkbox">
-                       
-                        </ul>  
-                        <ul>
-                            <label id="" for="">Queso</label>
-                            <input id=""type="checkbox">
-                       
-                        </ul>              
-                     </ol>   
-                     <textarea placeholder="Any special instructions:"></textarea>
-                     <br>
-                     <button type="button">Submit</button>
-                </div>                
-            </fieldset>
-        </form>         
+        </form>  
+        
     </main>    
     <script type="text/javascript" src="./script.js" ></script>
+    
 </body>
+
 </html>
 
